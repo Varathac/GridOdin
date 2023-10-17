@@ -1,0 +1,555 @@
+*{
+    font-family: 'IBM Plex Mono', monospace;
+}
+body {
+    background-color: #383b41;
+    margin: 0%;
+}
+
+.contentContainer {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+header {
+    display: grid;
+    grid-column: 2 / 10;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: #ecf0b9;
+    padding: 20px;
+    border-bottom: 3px solid black;
+}
+
+
+
+/* search bar */
+#searchIcon {
+    height: 25px;
+    width: 25px;
+    grid-column: 2 / 2;
+    cursor: pointer;
+}
+#search {
+    width: 38.8vw;
+    height: 25px;
+    background-color: #f3cdf5;
+    border-radius: 15px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+.searchBar {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-column: 1 / 3;
+    align-items: center;
+    padding-left: 48px;
+}
+.buttons {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 560px;
+}
+.button {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding: 0px;
+}
+.b {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    background-color: #f3cdf5;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#new.b {
+    width: 100px;
+    height: 25px;
+}
+
+#upload.b {
+    width: 100px;
+    height: 25px;
+}
+
+#share.b {
+    width: 100px;
+    height: 25px;
+}
+
+
+
+/*Boba Icon*/
+.userInfo {
+    height: 125px;
+    width: 450px;
+    display: grid;
+}
+.bobaCat {
+    padding-left: 25px;
+    padding-top: 10px;
+    cursor: pointer;
+    grid-column: 1;
+}
+.welcome {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+.BobaBoba {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;
+    padding-left: 49px;
+    grid-row: 1 / 1;
+    grid-column: 2/ 4;
+    background: linear-gradient(90deg, #f8c684, #f1a9ba, #4d9deb, #f1a9ba, #f8c684);
+    background-size: 400%;
+    letter-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 400%;
+	}
+}
+
+.boba {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 400;
+    padding-left: 20px;
+    color: #1e272b;
+    grid-column: 1 / 4;
+    grid-row: 2 / 2;
+    padding-bottom: 20px;
+}
+
+
+
+/*Nav Bar*/
+.sideBar {
+    display: grid;
+    background-color: #f3cdf5;
+    grid-row: 1 / 13;
+    border-right: 3px solid black;
+}
+.navContainer{
+    display: grid;
+    grid-template-rows: repeat(5, 20%);
+}
+.Icon {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.Dashboard {
+    display: flex;
+    font-weight: 700;
+    font-size: 30px;
+    justify-content: center;
+    grid-row: 2;
+    color: #324299;
+}
+#bottle {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+}
+.sideNav {
+    color: #324299;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0%;
+    text-align: center;
+}
+.side {
+    border: 3px solid black;
+    background-color: #ecf0b9;
+    border-radius: 15px;
+    list-style: none;
+    width: 70%;
+    height: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+#sideNav .sideNav {
+    grid-row: 2 / 3;
+}
+
+
+
+
+/*Container*/
+.container {
+    display: grid;
+    background-color: rgb(240, 221, 221);
+    grid-row: 2 / 13;
+    grid-column: 2 / 9;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+}
+#one.content {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.drink1 {
+    padding-right: 35px;
+    padding-top: 40px;
+}
+.drink1Content {
+    font-size: 35px;
+    font-weight: 600;
+    word-spacing: 5px;
+    color: #324299;
+}
+.cost {
+    font-size: 35px;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+
+.oneBox {
+    background-color: #ecf0b9;
+    border-radius: 15px;
+    border: 3px solid black;
+    grid-row: 2 / 4;
+    padding-bottom: 10px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    transform: scale(1);
+    transition: 2s;
+    cursor: pointer;
+}
+.oneBox:hover {
+    transform: scale(1.05);
+    transition: 2s;
+    box-shadow: 0 0 5px #747996, 0 0 25px #747996, 0 0 50px #747996, 0 0 200px #747996;
+}
+
+#two {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+.drink2 {
+    padding-right: 35px;
+    padding-top: 40px;
+}
+.drink2Content {
+    font-size: 35px;
+    font-weight: 600;
+    word-spacing: 5px;
+    color: #324299;
+}
+
+.twoBox {
+    background-color: #ecf0b9;
+    border-radius: 15px;
+    border: 3px solid black;
+    grid-row: 1 / 4;
+    width: 450px;
+    height: 377px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    transform: scale(1);
+    transition: 2s;
+    cursor: pointer;
+}
+.twoBox:hover {
+    transform: scale(1.05);
+    transition: 2s;
+    box-shadow: 0 0 5px #747996, 0 0 25px #747996, 0 0 50px #747996, 0 0 200px #747996;
+}
+
+#three {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+.drink3 {
+    padding-right: 35px;
+    padding-top: 40px;
+}
+.drink3Content {
+    font-size: 35px;
+    font-weight: 600;
+    word-spacing: 5px;
+    color: #324299;
+    background: linear-gradient(90deg, #f8c684, #f1a9ba, #4d9deb, #f1a9ba, #f8c684);
+    background-size: 400%;
+    letter-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+.costUnicorn {
+    font-size: 35px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #f8c684, #f1a9ba, #4d9deb, #f1a9ba, #f8c684);
+    background-size: 400%;
+    letter-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 400%;
+	}
+}
+
+
+.threeBox {
+    background-color: #ecf0b9;
+    border-radius: 15px;
+    border: 3px solid black;
+    grid-row: 1 / 4;
+    width: 450px;
+    height: 377px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    transform: scale(1);
+    transition: 2s;
+    cursor: pointer;
+}
+.threeBox:hover {
+    transform: scale(1.05);
+    transition: 2s;
+    box-shadow: 0 0 5px #747996, 0 0 25px #747996, 0 0 50px #747996, 0 0 200px #747996;
+}
+
+#four {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 30px;
+}
+.drink4 {
+    padding-right: 35px;
+    padding-top: 40px;
+}
+.drink4Content {
+    font-size: 35px;
+    font-weight: 600;
+    word-spacing: 5px;
+    color: #324299;
+}
+
+.fourBox {
+    background-color: #ecf0b9;
+    border-radius: 15px;
+    border: 3px solid black;
+    grid-row: 1 / 4;
+    width: 450px;
+    height: 377px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    transform: scale(1);
+    transition: 2s;
+    cursor: pointer;
+}
+.fourBox:hover {
+    transform: scale(1.05);
+    transition: 2s;
+    box-shadow: 0 0 5px #747996, 0 0 25px #747996, 0 0 50px #747996, 0 0 200px #747996;
+}
+
+#five {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 30px;
+}
+.drink5 {
+    padding-right: 35px;
+    padding-top: 40px;
+}
+.drink5Content {
+    font-size: 35px;
+    font-weight: 600;
+    word-spacing: 5px;
+    color: #324299;
+}
+
+.fiveBox {
+    background-color: #ecf0b9;
+    border-radius: 15px;
+    border: 3px solid black;
+    grid-row: 1 / 4;
+    width: 450px;
+    height: 377px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    transform: scale(1);
+    transition: 2s;
+    cursor: pointer;
+}
+.fiveBox:hover {
+    transform: scale(1.05);
+    transition: 2s;
+    box-shadow: 0 0 5px #747996, 0 0 25px #747996, 0 0 50px #747996, 0 0 200px #747996;
+}
+
+#six {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 30px;
+}
+.drink6 {
+    padding-right: 35px;
+    padding-top: 40px;
+}
+.drink6Content {
+    font-size: 35px;
+    font-weight: 600;
+    word-spacing: 5px;
+    color: #324299;
+}
+
+.sixBox {
+    background-color: #ecf0b9;
+    border-radius: 15px;
+    border: 3px solid black;
+    grid-row: 1 / 4;
+    width: 450px;
+    height: 377px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    transform: scale(1);
+    transition: 2s;
+    cursor: pointer;
+}
+.sixBox:hover {
+    transform: scale(1.05);
+    transition: 2s;
+    box-shadow: 0 0 5px #747996, 0 0 25px #747996, 0 0 50px #747996, 0 0 200px #747996;
+}
+
+#A {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+.ABox {
+    background-color: #ecf0b9;
+    color: #324299;
+    border-radius: 15px;
+    border: 3px solid black;
+    grid-row: 1 / 4;
+    width: 450px;
+    height: 377px;
+    text-align: center;
+    display: grid;
+}
+.aOne {
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 35px;
+}
+.aThree {
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 1px;
+}
+
+#T {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 30px;
+}
+
+.tBox {
+    background-color: #ecf0b9;
+    border-radius: 15px;
+    border: 3px solid black;
+    grid-row: 1 / 4;
+    width: 450px;
+    height: 377px;
+    text-align: center;
+    color: #324299;
+}
+.heading {
+    font-size: 25px;
+    padding-top: 35px;
+}
+.tOne {
+    position: relative;
+    bottom: 100px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.tTwo {
+    position: relative;
+    bottom: 0px;
+    left: 25px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.usIcon {
+    position: relative; 
+    right: 150px;
+    top: 30px;
+}
+
+.pfDrink {
+    position: relative;
+    right: 150px;
+    top: 80px;
+}
+
+@media (max-width: 1196px) {
+    .buttons {
+        overflow: hidden;   
+    }
+}
